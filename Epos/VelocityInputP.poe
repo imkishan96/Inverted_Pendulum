@@ -1,0 +1,13 @@
+$BEGIN_IT_HEADER
+DIRECTGLOBALDEFINITIONS = 1
+$END_IT_HEADER
+PROGRAM VelocityInput
+VAR_GLOBAL
+    qdProcessOutputUINT32_1        AT %QD0.5.0.0: UDINT;
+
+    ibProcessInputUINT8_1          AT %IB0.1.0.0: USINT;
+    idProcessInputINT32_1          AT %ID0.4.0.0: DINT;
+
+END_VAR
+
+END_PROGRAM

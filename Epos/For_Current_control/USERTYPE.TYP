@@ -1,0 +1,5 @@
+[IEC_IEC_NORM]
+TYPE
+
+END_TYPE
+

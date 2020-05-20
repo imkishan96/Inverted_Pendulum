@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VariableInfos HwVersion="0x7310" FwVersion="0x0205" AppNumber="0x0000" AppVersion="0x0000">
+  <Variable Name="NETWORKPARACURRENTPOSITION.AXIS0_QWCURRENTMODESETTINGVALUE" Type="" TypeOfArray="0" SelectionAddress="0x0000000107A80002">
+  </Variable>
+  <Variable Name="NETWORKPARACURRENTPOSITION.AXIS0_IDPOSITIONACTUALVALUE" Type="" TypeOfArray="0" SelectionAddress="0x0000000101000004">
+  </Variable>
+  <Variable Name="PROCESSPARAINPUTOUTPUT.QDPROCESSOUTPUTINT32_1" Type="" TypeOfArray="0" SelectionAddress="0x0000000107200004">
+  </Variable>
+  <Variable Name="PROCESSPARAINPUTOUTPUT.IWPROCESSINPUTINT16_1" Type="" TypeOfArray="0" SelectionAddress="0x0000000100280002">
+  </Variable>
+  <Variable Name="MAIN.QDPROCESSOUTPUTINT32_1" Type="" TypeOfArray="0" SelectionAddress="0x0001000107200004">
+  </Variable>
+  <Variable Name="MAIN.IWPROCESSINPUTINT16_1" Type="" TypeOfArray="1" SelectionAddress="0x0001000100280002">
+  </Variable>
+  <Variable Name="MAIN.AXIS0_QWCURRENTMODESETTINGVALUE" Type="" TypeOfArray="0" SelectionAddress="0x0001000107A80002">
+  </Variable>
+  <Variable Name="MAIN.AXIS0_IDPOSITIONACTUALVALUE" Type="" TypeOfArray="1" SelectionAddress="0x0001000101000004">
+  </Variable>
+</VariableInfos>

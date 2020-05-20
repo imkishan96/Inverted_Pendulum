@@ -1,0 +1,18 @@
+PROGRAM blah
+VAR_EXTERNAL
+idProcessInputINT32_1          	: DINT; 
+Axis0_qdTargetVelocity       	: DINT;
+END_VAR
+
+VAR_GLOBAL
+
+END_VAR
+
+VAR
+
+END_VAR
+Axis0_qdTargetVelocity := idProcessInputINT32_1;
+
+
+
+END_PROGRAM

@@ -1,0 +1,83 @@
+
+Building resource E:\Inverted Pendulum\Epos\new\$ENV$\Resource\Resource.MAK.
+Executing Pre-Build-Steps:
+Delete E:\INVERTED PENDULUM\EPOS\NEW\$GEN$\Resource\$TASK00$.CRD
+Delete E:\INVERTED PENDULUM\EPOS\NEW\$GEN$\Resource\blah.CRD
+Delete E:\INVERTED PENDULUM\EPOS\NEW\$GEN$\Resource\blah.INC
+Delete E:\INVERTED PENDULUM\EPOS\NEW\$GEN$\Resource\blah.OBJ
+Delete E:\INVERTED PENDULUM\EPOS\NEW\$GEN$\Resource\BuildLog.txt
+Delete E:\INVERTED PENDULUM\EPOS\NEW\$GEN$\Resource\NETWORK.INC
+Delete E:\INVERTED PENDULUM\EPOS\NEW\$GEN$\Resource\NETWORK.OBJ
+Delete E:\INVERTED PENDULUM\EPOS\NEW\$GEN$\Resource\PROCESS.INC
+Delete E:\INVERTED PENDULUM\EPOS\NEW\$GEN$\Resource\PROCESS.OBJ
+Delete E:\INVERTED PENDULUM\EPOS\NEW\$GEN$\Resource\ProgramData.mem
+Delete E:\INVERTED PENDULUM\EPOS\NEW\$GEN$\Resource\RESOURCE.bpd
+Delete E:\INVERTED PENDULUM\EPOS\NEW\$GEN$\Resource\Resource.PCD
+Delete E:\INVERTED PENDULUM\EPOS\NEW\$GEN$\Resource\Resource.prs
+Delete E:\INVERTED PENDULUM\EPOS\NEW\$GEN$\Resource\USERTYPE.INC
+Delete E:\INVERTED PENDULUM\EPOS\NEW\$GEN$\Resource\VariableInfo.xml
+
+Creating dependency list(s): 
+E:\Inverted Pendulum\Epos\new\blah.POE
+
+Compiling ...
+
+Performing syntax check on file(s): 
+E:\INVERTED PENDULUM\EPOS\NEW\USERTYPE.typ
+0 error(s), 0 warning(s) - E:\INVERTED PENDULUM\EPOS\NEW\USERTYPE.typ.
+
+
+Creating prototype(s): 
+E:\Inverted Pendulum\Epos\new\NETWORK.POE
+E:\Inverted Pendulum\Epos\new\PROCESS.POE
+
+Creating include file(s): 
+E:\Inverted Pendulum\Epos\new\NETWORK.POE
+E:\Inverted Pendulum\Epos\new\PROCESS.POE
+
+Compiling file(s): 
+E:\Inverted Pendulum\Epos\new\NETWORK.POE
+0 error(s), 0 warning(s) - E:\Inverted Pendulum\Epos\new\NETWORK.POE.
+
+E:\Inverted Pendulum\Epos\new\PROCESS.POE
+0 error(s), 0 warning(s) - E:\Inverted Pendulum\Epos\new\PROCESS.POE.
+
+
+Creating prototype(s): 
+E:\Inverted Pendulum\Epos\new\blah.POE
+
+Creating include file(s): 
+E:\Inverted Pendulum\Epos\new\blah.POE
+
+Compiling file(s): 
+E:\Inverted Pendulum\Epos\new\blah.POE
+0 error(s), 0 warning(s) - E:\Inverted Pendulum\Epos\new\blah.POE.
+
+
+Linking ...
+Linking resource globals ...
+Linking: E:\INVERTED PENDULUM\EPOS\NEW\$GEN$\Resource\NETWORK.OBJ.
+Linking: E:\INVERTED PENDULUM\EPOS\NEW\$GEN$\Resource\PROCESS.OBJ.
+Linking task BLAH ...
+Linking: E:\INVERTED PENDULUM\EPOS\NEW\$GEN$\Resource\blah.OBJ.
+Calling P-Code Generator.
+Native Code Compiler - ARM7 - Arm Mode V6.4.0
+compilation of all segments finished successfully!
+...NCC finished
+Linking resource: RESOURCE ...
+Linking: E:\INVERTED PENDULUM\EPOS\NEW\$GEN$\Resource\$TASK00$.CRD.
+Linking: E:\INVERTED PENDULUM\EPOS\NEW\$GEN$\Resource\blah.CRD.
+Code size in bytes: 7505.
+Number of segments: 19.
+0 error(s), 0 warning(s) - E:\INVERTED PENDULUM\EPOS\NEW\$GEN$\Resource\Resource.PCD.
+
+VARTAB32: 8 variables added in 1 segments (414 bytes)
+Executing Post-Build-Steps:
+Esam2PostBuild.exe /w E:\INVERTED PENDULUM\EPOS\NEW\$GEN$\Resource\ /i C:\ProgramData\infoteam Software\OpenPCS2008\OpenPCS.520\MODULES\EPOS2P.ini /v /p
+Esam2 post build process started
+Use process 'C:\Program Files (x86)\maxon motor ag\EPOS IDX\OpenPCS2008\pcddump32.exe'
+Variable info file (E:\INVERTED PENDULUM\EPOS\NEW\$GEN$\Resource\VariableInfo.xml) saved successfully!
+Program file (E:\INVERTED PENDULUM\EPOS\NEW\$GEN$\Resource\ProgramData.mem) saved successfully!
+Esam2 post build process finished
+Total:
+0 error(s) 0 warning(s)

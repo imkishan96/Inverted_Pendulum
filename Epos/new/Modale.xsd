@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSPY v5 rel. 4 U (http://www.xmlspy.com) by Robert Krugmann (infoteam Software GmbH) -->
+<xsd:schema targetNamespace="http://www.plcopen.org/xml/Modale.xsd" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:ppx="http://www.plcopen.org/xml/Modale.xsd" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xsd:element name="project">
+		<xsd:annotation>
+			<xsd:documentation>The complete project</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="The_Whole_Info">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="Tools">
+								<xsd:complexType>
+									<xsd:sequence maxOccurs="unbounded">
+										<xsd:element name="Column">
+											<xsd:complexType>
+												<xsd:attribute name="id" type="xsd:string" use="required"/>
+												<xsd:attribute name="name" type="xsd:string" use="required"/>
+												<xsd:attribute name="Write" type="xsd:string" use="required"/>
+												<xsd:attribute name="Display" type="xsd:string" use="required"/>
+												<xsd:attribute name="Types" type="xsd:string" use="optional"/>
+											</xsd:complexType>
+										</xsd:element>
+									</xsd:sequence>
+								</xsd:complexType>
+							</xsd:element>
+							<xsd:element name="Info_Server">
+								<xsd:complexType>
+									<xsd:sequence minOccurs="0">
+										<xsd:element name="Magic" minOccurs="0">
+											<xsd:complexType>
+												<xsd:attribute name="Name_Magic" type="xsd:string" use="optional"/>
+											</xsd:complexType>
+										</xsd:element>
+										<xsd:element name="OPC_Server" minOccurs="0">
+											<xsd:complexType>
+												<xsd:attribute name="Name_OPCServer" type="xsd:string" use="optional"/>
+											</xsd:complexType>
+										</xsd:element>
+										<xsd:element name="Server" minOccurs="0">
+											<xsd:complexType>
+												<xsd:attribute name="Name_Server" type="xsd:string" use="optional"/>
+											</xsd:complexType>
+										</xsd:element>
+									</xsd:sequence>
+								</xsd:complexType>
+							</xsd:element>
+							<xsd:element name="Info_Variables">
+								<xsd:complexType>
+									<xsd:sequence minOccurs="0">
+										<xsd:element name="Variable" minOccurs="0" maxOccurs="unbounded">
+											<xsd:complexType>
+												<xsd:sequence minOccurs="0">
+													<xsd:element name="OPC" minOccurs="0">
+														<xsd:complexType>
+															<xsd:sequence minOccurs="0" maxOccurs="unbounded">
+																<xsd:element name="NewTool" minOccurs="0">
+																	<xsd:complexType>
+																		<xsd:attribute name="Tool" type="xsd:string" use="optional"/>
+																		<xsd:attribute name="Name" type="xsd:string" use="optional"/>
+																		<xsd:attribute name="Type" type="xsd:string" use="optional"/>
+																	</xsd:complexType>
+																</xsd:element>
+															</xsd:sequence>
+															<xsd:attribute name="OPC_Name" type="xsd:string" use="optional"/>
+															<xsd:attribute name="OPC_Type" type="xsd:string" use="optional"/>
+															<xsd:attribute name="OPC_RW" type="xsd:string" use="optional"/>
+															<xsd:attribute name="OPC_Comment" type="xsd:string" use="optional"/>
+														</xsd:complexType>
+													</xsd:element>
+												</xsd:sequence>
+												<xsd:attribute name="id" type="xsd:string" use="optional"/>
+											</xsd:complexType>
+										</xsd:element>
+									</xsd:sequence>
+								</xsd:complexType>
+							</xsd:element>
+						</xsd:sequence>
+						<xsd:attribute name="networkType" type="xsd:NMTOKEN" use="required"/>
+						<xsd:attribute name="parserFileName" type="xsd:string" use="optional"/>
+					</xsd:complexType>
+				</xsd:element>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+</xsd:schema>

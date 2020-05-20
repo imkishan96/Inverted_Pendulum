@@ -1,0 +1,33 @@
+PROGRAM main
+VAR_EXTERNAL
+qdProcessOutputINT32_1        			: DINT;
+iwProcessInputINT16_1         			: INT;
+Axis0_qwCurrentModeSettingValue        	: INT;
+Axis0_idPositionActualValue            	: DINT;
+
+END_VAR
+
+VAR_GLOBAL
+
+END_VAR
+
+VAR
+
+END_VAR
+
+(*Automatically declared*)
+VAR_EXTERNAL
+END_VAR
+(** Axis0_qwCurrentModeSettingValue 	:= iwProcessInputINT16_1; **)
+	(* assign - Stmt *)
+	LD iwProcessInputINT16_1
+	ST Axis0_qwCurrentModeSettingValue
+
+(** qdProcessOutputINT32_1 				:= Axis0_idPositionActualValue; **)
+	(* assign - Stmt *)
+	LD Axis0_idPositionActualValue
+	ST qdProcessOutputINT32_1
+
+(**  **)
+(**  **)
+END_PROGRAM

@@ -1,0 +1,13 @@
+$BEGIN_IT_HEADER
+DIRECTGLOBALDEFINITIONS = 1
+$END_IT_HEADER
+PROGRAM VelocityInputN
+VAR_GLOBAL
+    (* Internal Network CAN-I *)
+    Axis0_qdTargetVelocity                    AT %QD1.4.0.0: DINT;
+
+    Axis0_idIncrementalEncoder1Counter        AT %ID1.5.0.0: UDINT;
+
+END_VAR
+
+END_PROGRAM

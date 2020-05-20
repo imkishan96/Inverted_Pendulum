@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VariableInfos HwVersion="0x7310" FwVersion="0x0205" AppNumber="0x0000" AppVersion="0x0000">
+  <Variable Name="NETWORK.AXIS0_QDTARGETVELOCITY" Type="" TypeOfArray="0" SelectionAddress="0x0000000107B80004">
+  </Variable>
+  <Variable Name="NETWORK.AXIS0_IDINCREMENTALENCODER1COUNTER" Type="" TypeOfArray="0" SelectionAddress="0x0000000101100004">
+  </Variable>
+  <Variable Name="PROCESS.QDPROCESSOUTPUTUINT32_1" Type="" TypeOfArray="0" SelectionAddress="0x0000000107600004">
+  </Variable>
+  <Variable Name="PROCESS.IDPROCESSINPUTINT32_1" Type="" TypeOfArray="0" SelectionAddress="0x0000000100680004">
+  </Variable>
+  <Variable Name="BLAH.IDPROCESSINPUTINT32_1" Type="" TypeOfArray="1" SelectionAddress="0x0001000100680004">
+  </Variable>
+  <Variable Name="BLAH.AXIS0_QDTARGETVELOCITY" Type="" TypeOfArray="0" SelectionAddress="0x0001000107B80004">
+  </Variable>
+  <Variable Name="BLAH.AXIS0_IDINCREMENTALENCODER1COUNTER" Type="" TypeOfArray="1" SelectionAddress="0x0001000101100004">
+  </Variable>
+  <Variable Name="BLAH.QDPROCESSOUTPUTUINT32_1" Type="" TypeOfArray="0" SelectionAddress="0x0001000107600004">
+  </Variable>
+</VariableInfos>
