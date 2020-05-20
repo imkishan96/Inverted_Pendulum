@@ -43,8 +43,8 @@
 					<Position>
 						<XPosition>0</XPosition>
 						<YPosition>0</YPosition>
-						<Width>968</Width>
-						<Height>469</Height>
+						<Width>136</Width>
+						<Height>380</Height>
 					</Position>
 				</ControlWindow>
 				<ControlWindow>
@@ -53,10 +53,10 @@
 					<FunctionId>109</FunctionId>
 					<InvokeId>CF939A52-6D55-4073-8156-7CC1EF9E41E4</InvokeId>
 					<Position>
-						<XPosition>26</XPosition>
-						<YPosition>26</YPosition>
-						<Width>994</Width>
-						<Height>469</Height>
+						<XPosition>-8</XPosition>
+						<YPosition>-31</YPosition>
+						<Width>1341</Width>
+						<Height>716</Height>
 					</Position>
 				</ControlWindow>
 				<ControlWindow>
@@ -65,10 +65,10 @@
 					<FunctionId>102</FunctionId>
 					<InvokeId>8626709B-1163-4147-ACAE-D89C1AF41071</InvokeId>
 					<Position>
-						<XPosition>-8</XPosition>
-						<YPosition>-31</YPosition>
-						<Width>1218</Width>
-						<Height>716</Height>
+						<XPosition>52</XPosition>
+						<YPosition>52</YPosition>
+						<Width>136</Width>
+						<Height>380</Height>
 					</Position>
 				</ControlWindow>
 				<ControlWindow>
@@ -77,9 +77,21 @@
 					<FunctionId>105</FunctionId>
 					<InvokeId>55AC3D9E-4604-4975-B2EE-C291829492A8</InvokeId>
 					<Position>
-						<XPosition>130</XPosition>
-						<YPosition>130</YPosition>
-						<Width>994</Width>
+						<XPosition>78</XPosition>
+						<YPosition>78</YPosition>
+						<Width>136</Width>
+						<Height>380</Height>
+					</Position>
+				</ControlWindow>
+				<ControlWindow>
+					<Name>Homing Mode - EPOS2 [Internal]</Name>
+					<SystemTag>8DA9770D-CDE4-435e-9226-320FA9B712D5</SystemTag>
+					<FunctionId>103</FunctionId>
+					<InvokeId>C5D96736-2853-4e1b-BFCD-622F6666596B</InvokeId>
+					<Position>
+						<XPosition>104</XPosition>
+						<YPosition>104</YPosition>
+						<Width>1117</Width>
 						<Height>469</Height>
 					</Position>
 				</ControlWindow>
@@ -153,9 +165,7 @@
 				<NetworkConfiguration>
 					<VariableFiles>
 						<ProcessVariableFile>ProcessVariables.poe</ProcessVariableFile>
-						<NetworkVariableFiles>
-							<NetworkVariableFile NetworkId="1" NodeId="1">NetworkVariables.poe</NetworkVariableFile>
-						</NetworkVariableFiles>
+						<NetworkVariableFiles></NetworkVariableFiles>
 					</VariableFiles>
 					<MaxBusLoad>0</MaxBusLoad>
 				</NetworkConfiguration>

@@ -8,7 +8,7 @@ F = 0;      % Force Applied(N)
 x = 0;      % Cart position
 X0 = [0 0 pi 0.1]';
 X_d = [0 0 0 0]';
-Ts = 1/50;
+Ts = 1/100;
 Current_saturation=2000; % 1000 mAmp
 N_to_mAmp = 260;
 Theta = 0;  % Pendulum angle from Vertical down position
@@ -41,7 +41,7 @@ sys = ss(A,B,C,D,'statename',states,'inputname',inputs,'outputname',outputs);
 %% Linearized Continious closed-loop State-space System
 
 Q = C'*C;
-Q(1,1) = 5000;  % working 5000
+Q(1,1) = 5000;  % working 5000  
 Q(3,3) = 1000;  % wokring 1000
 R = 0.1;        % working 0.1 
 K = lqr(A,B,Q,R);
