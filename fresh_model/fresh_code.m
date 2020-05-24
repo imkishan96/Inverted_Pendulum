@@ -41,7 +41,7 @@ sys = ss(A,B,C,D,'statename',states,'inputname',inputs,'outputname',outputs);
 %% Linearized Continious closed-loop State-space System
 
 Q = C'*C;
-Q(1,1) = 5000;  % working 5000  
+Q(1,1) = 3000;  % working 5000  
 Q(3,3) = 1000;  % wokring 1000
 R = 0.1;        % working 0.1 
 K = lqr(A,B,Q,R);
@@ -82,7 +82,7 @@ Bd = sys_d.b;
 Cd = sys_d.c;
 Dd = sys_d.d;
 
-Kd = dlqr(Ad,Bd,Q,R);
+Kd = dlqr(Ad,Bd,Q,R)
 Adc = [(Ad-Bd*Kd)];
 Bdc = [Bd];
 Cdc = [Cd];
@@ -98,8 +98,8 @@ sys_d_cl = ss(Adc,Bdc*Ndc,Cdc,Ddc,Ts,'statename',states,'inputname',inputs,'outp
 %step(sys_d_cl)
 
 %% Linearized discreat closed-loop Observer State-space System
-Pd = [ pole(sys_d_cl)/3];
-Ld = place(Ad',Cd',Pd)'
+Pd = [ pole(sys_d_cl)/3]
+Ld = place(Ad',Cd',Pd)';
 
 
 Adce = [(Ad-Bd*Kd) (Bd*Kd);

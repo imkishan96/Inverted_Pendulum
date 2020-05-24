@@ -1,13 +1,4 @@
-/**************************
- *         Author         *
- *      omarCartera       *
- *                        *
- *        5/8/2017        *
- *                        *
- * c.omargamal@gmail.com  *
- **************************/
-
-#include <SPI.h>          //SPI is used to talk to the CAN Controller
+#include <SPI.h>          
 #include <mcp_can.h>
 
 MCP_CAN CAN(10);          //set SPI Chip Select to pin 10
@@ -19,11 +10,9 @@ unsigned int canID;
 void setup()
 {
   Serial.begin(115200);   //to communicate with Serial monitor
-  
-//tries to initialize, if failed --> it will loop here for ever
 START_INIT:
 
-    if(CAN_OK == CAN.begin(CAN_1000KBPS))      //setting CAN baud rate to 500Kbps
+    if(CAN_OK == CAN.begin(CAN_1000KBPS))      //setting CAN baud rate to 1000Kbps but actually its going to be 500KBPS because CAN module has 8MHz crystal not 16MHz
     {
         Serial.println("CAN BUS Shield init ok!");
     }

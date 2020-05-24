@@ -1,11 +1,3 @@
-/**************************
- *         Author         *
- *      omarCartera       *
- *                        *
- *        5/8/2017        *
- *                        *
- * c.omargamal@gmail.com  *
- **************************/
 
 #include <SPI.h>          //SPI is used to talk to the CAN Controller
 #include <mcp_can.h>
@@ -17,11 +9,9 @@ MCP_CAN CAN(10);          //set SPI Chip Select to pin 10
 void setup()
 {
   Serial.begin(115200);   //to communicate with Serial monitor
-
-//tries to initialize, if failed --> it will loop here for ever
 START_INIT:
 
-    if(CAN_OK == CAN.begin(CAN_1000KBPS))      //setting CAN baud rate to 500Kbps
+    if(CAN_OK == CAN.begin(CAN_1000KBPS))      //setting CAN baud rate to 1000Kbps but actually its going to be 500KBPS because CAN module has 8MHz crystal not 16MHz
     {
         Serial.println("CAN BUS Shield init ok!");
     }
@@ -79,21 +69,20 @@ void loop()
     
     newPosition = myEnc.read();
     
-    if (micros()-past_time >999) //newPosition != oldPosition &&
+    if (micros()-past_time >999) //sends data every one millisecond 
     {
       oldPosition = newPosition;
-      posoffset = newPosition + 1200;
+      posoffset = newPosition + 1200; //2400 pulse for one rev so 1200 pulse to offset from vertical down position 
       CAN.sendMsgBuf(999, 0, 4 ,(byte *) &posoffset ); 
       //Serial.println("-------");
       past_time = micros();
     }
       
-    if(micros()-onesec > 5999999)
+    if(micros()-onesec > 4999999) // sends Heartbeat every 5 second
     {
       CAN.sendMsgBuf(1794 , 0, 1, data_HB ); // Heartbeat (COB-ID-702H, 1byte , [r, status: pre-op(127D)])
       onesec = micros();
       //past_time = micros();
       Serial.println("I am Alive");
-      CAN.sendMsgBuf(0 , 0, 1, data_HB ); // Heartbeat (COB-ID-702H, 1byte , [r, status: pre-op(127D)])
     }
 }

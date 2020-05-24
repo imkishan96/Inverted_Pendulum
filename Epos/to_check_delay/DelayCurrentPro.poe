@@ -1,0 +1,15 @@
+$BEGIN_IT_HEADER
+DIRECTGLOBALDEFINITIONS = 1
+$END_IT_HEADER
+PROGRAM DelayCurrentPro
+VAR_GLOBAL
+    qdProcessOutputINT32_1        AT %QD0.4.0.0: DINT;
+    qwProcessOutputINT16_1        AT %QW0.2.0.0: INT;
+    qwProcessOutputINT16_2        AT %QW0.2.2.0: INT;
+    qwProcessOutputINT16_3        AT %QW0.2.4.0: INT;
+
+    iwProcessInputINT16_1         AT %IW0.2.0.0: INT;
+
+END_VAR
+
+END_PROGRAM

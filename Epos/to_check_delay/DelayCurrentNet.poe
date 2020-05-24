@@ -1,0 +1,16 @@
+$BEGIN_IT_HEADER
+DIRECTGLOBALDEFINITIONS = 1
+$END_IT_HEADER
+PROGRAM DelayCurrentNet
+VAR_GLOBAL
+    (* Internal Network CAN-I *)
+    Axis0_qwCurrentModeSettingValue           AT %QW1.2.0.0: INT;
+
+    Axis0_idPositionActualValue               AT %ID1.4.0.0: DINT;
+    Axis0_iwCurrentActualValue                AT %IW1.2.0.0: INT;
+    Axis0_iwCurrentActualValueAveraged        AT %IW1.2.2.0: INT;
+    Axis0_iwCurrentDemandValue                AT %IW1.2.4.0: INT;
+
+END_VAR
+
+END_PROGRAM

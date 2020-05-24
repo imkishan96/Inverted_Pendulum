@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VariableInfos HwVersion="0x7310" FwVersion="0x0205" AppNumber="0x0000" AppVersion="0x0000">
+  <Variable Name="DELAYCURRENTNET.AXIS0_QWCURRENTMODESETTINGVALUE" Type="" TypeOfArray="0" SelectionAddress="0x0000000107A80002">
+  </Variable>
+  <Variable Name="DELAYCURRENTNET.AXIS0_IDPOSITIONACTUALVALUE" Type="" TypeOfArray="0" SelectionAddress="0x0000000101000004">
+  </Variable>
+  <Variable Name="DELAYCURRENTNET.AXIS0_IWCURRENTACTUALVALUE" Type="" TypeOfArray="0" SelectionAddress="0x0000000100F00002">
+  </Variable>
+  <Variable Name="DELAYCURRENTNET.AXIS0_IWCURRENTACTUALVALUEAVERAGED" Type="" TypeOfArray="0" SelectionAddress="0x0000000100F20002">
+  </Variable>
+  <Variable Name="DELAYCURRENTNET.AXIS0_IWCURRENTDEMANDVALUE" Type="" TypeOfArray="0" SelectionAddress="0x0000000100F40002">
+  </Variable>
+  <Variable Name="DELAYCURRENTPRO.QDPROCESSOUTPUTINT32_1" Type="" TypeOfArray="0" SelectionAddress="0x0000000107200004">
+  </Variable>
+  <Variable Name="DELAYCURRENTPRO.QWPROCESSOUTPUTINT16_1" Type="" TypeOfArray="0" SelectionAddress="0x0000000106E00002">
+  </Variable>
+  <Variable Name="DELAYCURRENTPRO.QWPROCESSOUTPUTINT16_2" Type="" TypeOfArray="0" SelectionAddress="0x0000000106E20002">
+  </Variable>
+  <Variable Name="DELAYCURRENTPRO.QWPROCESSOUTPUTINT16_3" Type="" TypeOfArray="0" SelectionAddress="0x0000000106E40002">
+  </Variable>
+  <Variable Name="DELAYCURRENTPRO.IWPROCESSINPUTINT16_1" Type="" TypeOfArray="0" SelectionAddress="0x0000000100280002">
+  </Variable>
+  <Variable Name="DELAY.QWPROCESSOUTPUTINT16_1" Type="" TypeOfArray="0" SelectionAddress="0x0001000106E00002">
+  </Variable>
+  <Variable Name="DELAY.QWPROCESSOUTPUTINT16_2" Type="" TypeOfArray="0" SelectionAddress="0x0001000106E20002">
+  </Variable>
+  <Variable Name="DELAY.QWPROCESSOUTPUTINT16_3" Type="" TypeOfArray="0" SelectionAddress="0x0001000106E40002">
+  </Variable>
+  <Variable Name="DELAY.AXIS0_IWCURRENTACTUALVALUE" Type="" TypeOfArray="1" SelectionAddress="0x0001000100F00002">
+  </Variable>
+  <Variable Name="DELAY.AXIS0_IWCURRENTACTUALVALUEAVERAGED" Type="" TypeOfArray="1" SelectionAddress="0x0001000100F20002">
+  </Variable>
+  <Variable Name="DELAY.AXIS0_IWCURRENTDEMANDVALUE" Type="" TypeOfArray="1" SelectionAddress="0x0001000100F40002">
+  </Variable>
+  <Variable Name="DELAY.IWPROCESSINPUTINT16_1" Type="" TypeOfArray="1" SelectionAddress="0x0001000100280002">
+  </Variable>
+  <Variable Name="DELAY.AXIS0_QWCURRENTMODESETTINGVALUE" Type="" TypeOfArray="0" SelectionAddress="0x0001000107A80002">
+  </Variable>
+</VariableInfos>

@@ -1,77 +1,15 @@
 
 Building resource E:\Inverted_Pendulum\Epos\For_Current_control\$ENV$\Resource\Resource.MAK.
 Executing Pre-Build-Steps:
-Delete E:\INVERTED_PENDULUM\EPOS\FOR_CURRENT_CONTROL\$GEN$\Resource\$TASK00$.CRD
-Delete E:\INVERTED_PENDULUM\EPOS\FOR_CURRENT_CONTROL\$GEN$\Resource\BuildLog.txt
-Delete E:\INVERTED_PENDULUM\EPOS\FOR_CURRENT_CONTROL\$GEN$\Resource\main.CRD
-Delete E:\INVERTED_PENDULUM\EPOS\FOR_CURRENT_CONTROL\$GEN$\Resource\main.INC
-Delete E:\INVERTED_PENDULUM\EPOS\FOR_CURRENT_CONTROL\$GEN$\Resource\main.OBJ
-Delete E:\INVERTED_PENDULUM\EPOS\FOR_CURRENT_CONTROL\$GEN$\Resource\NETWORKPARACURRENTPOSITION.INC
-Delete E:\INVERTED_PENDULUM\EPOS\FOR_CURRENT_CONTROL\$GEN$\Resource\NETWORKPARACURRENTPOSITION.OBJ
-Delete E:\INVERTED_PENDULUM\EPOS\FOR_CURRENT_CONTROL\$GEN$\Resource\PROCESSPARAINPUTOUTPUT.INC
-Delete E:\INVERTED_PENDULUM\EPOS\FOR_CURRENT_CONTROL\$GEN$\Resource\PROCESSPARAINPUTOUTPUT.OBJ
-Delete E:\INVERTED_PENDULUM\EPOS\FOR_CURRENT_CONTROL\$GEN$\Resource\ProgramData.mem
-Delete E:\INVERTED_PENDULUM\EPOS\FOR_CURRENT_CONTROL\$GEN$\Resource\RESOURCE.bpd
-Delete E:\INVERTED_PENDULUM\EPOS\FOR_CURRENT_CONTROL\$GEN$\Resource\Resource.PCD
-Delete E:\INVERTED_PENDULUM\EPOS\FOR_CURRENT_CONTROL\$GEN$\Resource\Resource.prs
-Delete E:\INVERTED_PENDULUM\EPOS\FOR_CURRENT_CONTROL\$GEN$\Resource\USERTYPE.INC
-Delete E:\INVERTED_PENDULUM\EPOS\FOR_CURRENT_CONTROL\$GEN$\Resource\VariableInfo.xml
 
 Creating dependency list(s): 
 E:\Inverted_Pendulum\Epos\For_Current_control\main.POE
 
 Compiling ...
 
-Performing syntax check on file(s): 
-E:\INVERTED_PENDULUM\EPOS\FOR_CURRENT_CONTROL\USERTYPE.typ
-0 error(s), 0 warning(s) - E:\INVERTED_PENDULUM\EPOS\FOR_CURRENT_CONTROL\USERTYPE.typ.
-
-
-Creating prototype(s): 
-E:\Inverted_Pendulum\Epos\For_Current_control\NETWORKPARACURRENTPOSITION.POE
-E:\Inverted_Pendulum\Epos\For_Current_control\PROCESSPARAINPUTOUTPUT.POE
-
-Creating include file(s): 
-E:\Inverted_Pendulum\Epos\For_Current_control\NETWORKPARACURRENTPOSITION.POE
-E:\Inverted_Pendulum\Epos\For_Current_control\PROCESSPARAINPUTOUTPUT.POE
-
-Compiling file(s): 
-E:\Inverted_Pendulum\Epos\For_Current_control\NETWORKPARACURRENTPOSITION.POE
-0 error(s), 0 warning(s) - E:\Inverted_Pendulum\Epos\For_Current_control\NETWORKPARACURRENTPOSITION.POE.
-
-E:\Inverted_Pendulum\Epos\For_Current_control\PROCESSPARAINPUTOUTPUT.POE
-0 error(s), 0 warning(s) - E:\Inverted_Pendulum\Epos\For_Current_control\PROCESSPARAINPUTOUTPUT.POE.
-
-
-Creating prototype(s): 
-E:\Inverted_Pendulum\Epos\For_Current_control\main.POE
-
-Creating include file(s): 
-E:\Inverted_Pendulum\Epos\For_Current_control\main.POE
-
-Compiling file(s): 
-E:\Inverted_Pendulum\Epos\For_Current_control\main.POE
-0 error(s), 0 warning(s) - E:\Inverted_Pendulum\Epos\For_Current_control\main.POE.
-
-
 Linking ...
-Linking resource globals ...
-Linking: E:\INVERTED_PENDULUM\EPOS\FOR_CURRENT_CONTROL\$GEN$\Resource\NETWORKPARACURRENTPOSITION.OBJ.
-Linking: E:\INVERTED_PENDULUM\EPOS\FOR_CURRENT_CONTROL\$GEN$\Resource\PROCESSPARAINPUTOUTPUT.OBJ.
-Linking task MAIN ...
-Linking: E:\INVERTED_PENDULUM\EPOS\FOR_CURRENT_CONTROL\$GEN$\Resource\main.OBJ.
-Calling P-Code Generator.
-Native Code Compiler - ARM7 - Arm Mode V6.4.0
-compilation of all segments finished successfully!
-...NCC finished
-Linking resource: RESOURCE ...
-Linking: E:\INVERTED_PENDULUM\EPOS\FOR_CURRENT_CONTROL\$GEN$\Resource\$TASK00$.CRD.
-Linking: E:\INVERTED_PENDULUM\EPOS\FOR_CURRENT_CONTROL\$GEN$\Resource\main.CRD.
-Code size in bytes: 7505.
-Number of segments: 19.
 0 error(s), 0 warning(s) - E:\INVERTED_PENDULUM\EPOS\FOR_CURRENT_CONTROL\$GEN$\Resource\Resource.PCD.
 
-VARTAB32: 8 variables added in 1 segments (484 bytes)
 Executing Post-Build-Steps:
 Esam2PostBuild.exe /w E:\INVERTED_PENDULUM\EPOS\FOR_CURRENT_CONTROL\$GEN$\Resource\ /i C:\ProgramData\infoteam Software\OpenPCS2008\OpenPCS.520\MODULES\EPOS2P.ini /v /p
 Esam2 post build process started

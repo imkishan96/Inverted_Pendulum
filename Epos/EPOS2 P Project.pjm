@@ -43,8 +43,8 @@
 					<Position>
 						<XPosition>0</XPosition>
 						<YPosition>0</YPosition>
-						<Width>136</Width>
-						<Height>380</Height>
+						<Width>1091</Width>
+						<Height>469</Height>
 					</Position>
 				</ControlWindow>
 				<ControlWindow>
@@ -53,10 +53,10 @@
 					<FunctionId>109</FunctionId>
 					<InvokeId>CF939A52-6D55-4073-8156-7CC1EF9E41E4</InvokeId>
 					<Position>
-						<XPosition>-8</XPosition>
-						<YPosition>-31</YPosition>
-						<Width>1341</Width>
-						<Height>716</Height>
+						<XPosition>26</XPosition>
+						<YPosition>26</YPosition>
+						<Width>1117</Width>
+						<Height>469</Height>
 					</Position>
 				</ControlWindow>
 				<ControlWindow>
@@ -65,10 +65,10 @@
 					<FunctionId>102</FunctionId>
 					<InvokeId>8626709B-1163-4147-ACAE-D89C1AF41071</InvokeId>
 					<Position>
-						<XPosition>52</XPosition>
-						<YPosition>52</YPosition>
-						<Width>136</Width>
-						<Height>380</Height>
+						<XPosition>-8</XPosition>
+						<YPosition>-31</YPosition>
+						<Width>1276</Width>
+						<Height>716</Height>
 					</Position>
 				</ControlWindow>
 				<ControlWindow>
@@ -79,8 +79,8 @@
 					<Position>
 						<XPosition>78</XPosition>
 						<YPosition>78</YPosition>
-						<Width>136</Width>
-						<Height>380</Height>
+						<Width>1117</Width>
+						<Height>469</Height>
 					</Position>
 				</ControlWindow>
 				<ControlWindow>
@@ -164,8 +164,10 @@
 				<ObjectDictionarySelection></ObjectDictionarySelection>
 				<NetworkConfiguration>
 					<VariableFiles>
-						<ProcessVariableFile>ProcessVariables.poe</ProcessVariableFile>
-						<NetworkVariableFiles></NetworkVariableFiles>
+						<ProcessVariableFile>DelayCurrentPro.poe</ProcessVariableFile>
+						<NetworkVariableFiles>
+							<NetworkVariableFile NetworkId="1" NodeId="1">DelayCurrentNet.poe</NetworkVariableFile>
+						</NetworkVariableFiles>
 					</VariableFiles>
 					<MaxBusLoad>0</MaxBusLoad>
 				</NetworkConfiguration>
