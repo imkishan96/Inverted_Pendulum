@@ -1,12 +1,12 @@
 M = 0.195;    % Mass of cart (Kg)
-m = 0.17;    % Mass of pendulum(Kg)
+m = 0.18;    % Mass of pendulum(Kg)
 b = 0.5;    % Co-efficient of Friction(N*sec/m)
-l = 0.2;    % length of pendulum(m)
+l = 0.21;    % length of pendulum(m)
 g = 9.8;    % gravity (m/sec^2) 
 I = (m*l^2)/3;  % Moment of inertia(Kg*m^2)
 F = 0;      % Force Applied(N)
 x = 0;      % Cart position
-X0 = [0 0 pi 0.1]';
+X0 = [0 0 pi 0]';
 X_d = [0 0 0 0]';
 Ts = 1/100;
 Current_saturation=2000; % 1000 mAmp
@@ -41,8 +41,8 @@ sys = ss(A,B,C,D,'statename',states,'inputname',inputs,'outputname',outputs);
 %% Linearized Continious closed-loop State-space System
 
 Q = C'*C;
-Q(1,1) = 3000;  % working 5000  
-Q(3,3) = 1000;  % wokring 1000
+Q(1,1) = 5000;  % working 5000  
+Q(3,3) = 500;  % wokring 1000
 R = 0.1;        % working 0.1 
 K = lqr(A,B,Q,R);
 

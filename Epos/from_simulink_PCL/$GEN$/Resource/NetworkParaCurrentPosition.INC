@@ -1,0 +1,24 @@
+$INCLUDE_FILE
+
+
+(* GLOBALE TYPEN *)
+
+
+
+(* PROJEKT TYPEN *)
+
+
+
+(* GLOBALE PROTOTYPEN *)
+
+
+
+(* PROJEKT PROTOTYPEN *)
+
+
+
+(* EXTERNE POEs *)
+
+
+
+$END_INCLUDE_FILE

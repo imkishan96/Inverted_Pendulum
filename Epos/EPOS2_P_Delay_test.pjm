@@ -1,7 +1,7 @@
 <?xml version="1.0"?><EPOS-Studio File="EPOS Studio.exe" Version="3.6.1.0">
 	<Container>
 		<Project>
-			<Name>EPOS2 P Project</Name>
+			<Name>EPOS2_P_Delay_test</Name>
 			<ProjectSettings>
 				<RefreshRate>500</RefreshRate>
 			</ProjectSettings>
@@ -36,63 +36,27 @@
 			</NetworkTopology>
 			<WindowInformation>
 				<ControlWindow>
-					<Name>Device Control - EPOS2 [Internal]</Name>
-					<SystemTag>8DA9770D-CDE4-435e-9226-320FA9B712D5</SystemTag>
-					<FunctionId>102</FunctionId>
-					<InvokeId>6DBEB14E-0516-411f-A2A8-E2EB09083477</InvokeId>
-					<Position>
-						<XPosition>0</XPosition>
-						<YPosition>0</YPosition>
-						<Width>1026</Width>
-						<Height>491</Height>
-					</Position>
-				</ControlWindow>
-				<ControlWindow>
-					<Name>Current Mode - EPOS2 [Internal]</Name>
-					<SystemTag>8DA9770D-CDE4-435e-9226-320FA9B712D5</SystemTag>
-					<FunctionId>109</FunctionId>
-					<InvokeId>CF939A52-6D55-4073-8156-7CC1EF9E41E4</InvokeId>
-					<Position>
-						<XPosition>-8</XPosition>
-						<YPosition>-31</YPosition>
-						<Width>1276</Width>
-						<Height>738</Height>
-					</Position>
-				</ControlWindow>
-				<ControlWindow>
 					<Name>IEC-61131 Programming - EPOS2 P [Node 1]</Name>
 					<SystemTag>D8C80318-7B7B-482e-86D6-82FAB052764D</SystemTag>
 					<FunctionId>102</FunctionId>
-					<InvokeId>8626709B-1163-4147-ACAE-D89C1AF41071</InvokeId>
+					<InvokeId>F394BBF2-31CE-4b0c-A79D-BE19017A3C57</InvokeId>
 					<Position>
-						<XPosition>52</XPosition>
-						<YPosition>52</YPosition>
-						<Width>1052</Width>
-						<Height>491</Height>
-					</Position>
-				</ControlWindow>
-				<ControlWindow>
-					<Name>Object Dictionary - EPOS2 [Internal]</Name>
-					<SystemTag>8DA9770D-CDE4-435e-9226-320FA9B712D5</SystemTag>
-					<FunctionId>101</FunctionId>
-					<InvokeId>6A169D2A-2A88-4204-90E7-F6C63F858507</InvokeId>
-					<Position>
-						<XPosition>78</XPosition>
-						<YPosition>78</YPosition>
-						<Width>1052</Width>
-						<Height>491</Height>
+						<XPosition>130</XPosition>
+						<YPosition>130</YPosition>
+						<Width>1026</Width>
+						<Height>469</Height>
 					</Position>
 				</ControlWindow>
 				<ControlWindow>
 					<Name>I/O Monitor - EPOS2 [Internal]</Name>
 					<SystemTag>8DA9770D-CDE4-435e-9226-320FA9B712D5</SystemTag>
 					<FunctionId>113</FunctionId>
-					<InvokeId>E6A16217-09D4-432a-A035-F8C458807FF1</InvokeId>
+					<InvokeId>2C09318C-4AD5-4b1f-8B2D-E74AF151DE84</InvokeId>
 					<Position>
-						<XPosition>104</XPosition>
-						<YPosition>104</YPosition>
-						<Width>1052</Width>
-						<Height>491</Height>
+						<XPosition>-8</XPosition>
+						<YPosition>-31</YPosition>
+						<Width>1276</Width>
+						<Height>716</Height>
 					</Position>
 				</ControlWindow>
 			</WindowInformation>
@@ -164,10 +128,12 @@
 				<ObjectDictionarySelection></ObjectDictionarySelection>
 				<NetworkConfiguration>
 					<VariableFiles>
-						<ProcessVariableFile>ProcessVariables.poe</ProcessVariableFile>
-						<NetworkVariableFiles></NetworkVariableFiles>
+						<ProcessVariableFile>..\..\..\..\..\maxon motor ag\EPOS IDX\EPOS Studio\Templates\ProcessVariables.poe\ProcessVariables.poe</ProcessVariableFile>
+						<NetworkVariableFiles>
+							<NetworkVariableFile NetworkId="1" NodeId="1">..\..\..\..\..\maxon motor ag\EPOS IDX\EPOS Studio\Templates\NetworkVariables.poe\NetworkVariables.poe</NetworkVariableFile>
+						</NetworkVariableFiles>
 					</VariableFiles>
-					<MaxBusLoad>0</MaxBusLoad>
+					<MaxBusLoad>60</MaxBusLoad>
 				</NetworkConfiguration>
 				<Channel Name="CAN-I">
 					<ObjectFilters>

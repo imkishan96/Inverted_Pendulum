@@ -1,0 +1,11 @@
+$BEGIN_IT_HEADER
+DIRECTGLOBALDEFINITIONS = 1
+$END_IT_HEADER
+PROGRAM NetworkParaCurrentPosition
+VAR_GLOBAL
+Axis0_qwCurrentModeSettingValue        AT %QW1.2.0.0: INT;
+Axis0_idPositionActualValue            AT %ID1.4.0.0: DINT;
+END_VAR
+
+
+END_PROGRAM

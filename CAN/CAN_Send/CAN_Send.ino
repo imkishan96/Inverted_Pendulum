@@ -2,7 +2,7 @@
 #include <SPI.h>          //SPI is used to talk to the CAN Controller
 #include <mcp_can.h>
 #include <Encoder.h>
-Encoder myEnc(2, 3);
+Encoder myEnc(2, 3);    // connect encoder on digital Pin 2 and 3
 
 MCP_CAN CAN(10);          //set SPI Chip Select to pin 10
 
