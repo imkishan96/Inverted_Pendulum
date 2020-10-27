@@ -36,18 +36,6 @@
 			</NetworkTopology>
 			<WindowInformation>
 				<ControlWindow>
-					<Name>Device Control - EPOS2 [Internal]</Name>
-					<SystemTag>8DA9770D-CDE4-435e-9226-320FA9B712D5</SystemTag>
-					<FunctionId>102</FunctionId>
-					<InvokeId>6DBEB14E-0516-411f-A2A8-E2EB09083477</InvokeId>
-					<Position>
-						<XPosition>0</XPosition>
-						<YPosition>0</YPosition>
-						<Width>1026</Width>
-						<Height>491</Height>
-					</Position>
-				</ControlWindow>
-				<ControlWindow>
 					<Name>Current Mode - EPOS2 [Internal]</Name>
 					<SystemTag>8DA9770D-CDE4-435e-9226-320FA9B712D5</SystemTag>
 					<FunctionId>109</FunctionId>
@@ -91,6 +79,18 @@
 					<Position>
 						<XPosition>104</XPosition>
 						<YPosition>104</YPosition>
+						<Width>1052</Width>
+						<Height>491</Height>
+					</Position>
+				</ControlWindow>
+				<ControlWindow>
+					<Name>Position Mode - EPOS2 [Internal]</Name>
+					<SystemTag>8DA9770D-CDE4-435e-9226-320FA9B712D5</SystemTag>
+					<FunctionId>105</FunctionId>
+					<InvokeId>37D6752D-3AAC-45e8-B625-531D5B86F204</InvokeId>
+					<Position>
+						<XPosition>130</XPosition>
+						<YPosition>130</YPosition>
 						<Width>1052</Width>
 						<Height>491</Height>
 					</Position>

@@ -30,7 +30,7 @@ START_INIT:
 
 //loading the data bytes of the message. Up to 8 bytes
 byte data[4] = {225,3,0,0};
-byte data_NMT[2] = {129,1};
+byte data_NMT[2] = {1,1};
 byte data_HB[1] = {5};
 long oldPosition  = -999;
 long newPosition;
@@ -80,9 +80,9 @@ void loop()
       
     if(micros()-onesec > 4999999) // sends Heartbeat every 5 second
     {
-      CAN.sendMsgBuf(1794 , 0, 1, data_HB ); // Heartbeat (COB-ID-702H, 1byte , [r, status: pre-op(127D)])
+      CAN.sendMsgBuf(0 , 0, 2, data_NMT ); // Heartbeat (COB-ID-702H, 1byte , [r, status: pre-op(127D)])
       onesec = micros();
       //past_time = micros();
-      Serial.println("I am Alive");
+      //Serial.println("I am Alive");
     }
 }
