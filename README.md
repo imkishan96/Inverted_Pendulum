@@ -9,7 +9,24 @@ Checkout Documentation.docx for more details
 File: models/main_code.m
 Change necessary details as explained in the comments and run the matlab file to load the parameters into the workspace.
 
-use simulink models to upload code onto the Arduinos
+simulink models can access the workspace so when you run simulation model or Controller model to upload code onto the Arduinos is can use these parameters.
+
+## Full System Simulation 
+File: Model/Full_Sys_Sim.slx
+
+![Full System Simulation Model](img/Simulation.jpg)
+
+use this model to test controller before deploying to Arduino.
+
+**Note**: this simulation doesnt include dynamics of motor or belt pulley, so it won't be realistic.
+
+![Full System Simulation Model](img/Model_selector.jpg)
+
+use Model Selector box to chose model to run,
+1. Linearized Discrete state-space
+2. Linearized Continous state-space
+3. Non Linear Continous Model (Simulink)
+4. Non Linear Continous Model (Simscape)
 
 
 ## scope
