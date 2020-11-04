@@ -43,8 +43,8 @@
 					<Position>
 						<XPosition>-8</XPosition>
 						<YPosition>-31</YPosition>
-						<Width>1276</Width>
-						<Height>738</Height>
+						<Width>976</Width>
+						<Height>538</Height>
 					</Position>
 				</ControlWindow>
 				<ControlWindow>
@@ -53,10 +53,10 @@
 					<FunctionId>102</FunctionId>
 					<InvokeId>8626709B-1163-4147-ACAE-D89C1AF41071</InvokeId>
 					<Position>
-						<XPosition>52</XPosition>
-						<YPosition>52</YPosition>
-						<Width>1052</Width>
-						<Height>491</Height>
+						<XPosition>26</XPosition>
+						<YPosition>26</YPosition>
+						<Width>804</Width>
+						<Height>343</Height>
 					</Position>
 				</ControlWindow>
 				<ControlWindow>
@@ -65,34 +65,22 @@
 					<FunctionId>101</FunctionId>
 					<InvokeId>6A169D2A-2A88-4204-90E7-F6C63F858507</InvokeId>
 					<Position>
-						<XPosition>78</XPosition>
-						<YPosition>78</YPosition>
-						<Width>1052</Width>
-						<Height>491</Height>
+						<XPosition>52</XPosition>
+						<YPosition>52</YPosition>
+						<Width>804</Width>
+						<Height>343</Height>
 					</Position>
 				</ControlWindow>
 				<ControlWindow>
-					<Name>I/O Monitor - EPOS2 [Internal]</Name>
+					<Name>Homing Mode - EPOS2 [Internal]</Name>
 					<SystemTag>8DA9770D-CDE4-435e-9226-320FA9B712D5</SystemTag>
-					<FunctionId>113</FunctionId>
-					<InvokeId>E6A16217-09D4-432a-A035-F8C458807FF1</InvokeId>
+					<FunctionId>103</FunctionId>
+					<InvokeId>AAF6E8C4-ACE1-468c-A5B5-23440CEEAF3F</InvokeId>
 					<Position>
-						<XPosition>104</XPosition>
-						<YPosition>104</YPosition>
-						<Width>1052</Width>
-						<Height>491</Height>
-					</Position>
-				</ControlWindow>
-				<ControlWindow>
-					<Name>Position Mode - EPOS2 [Internal]</Name>
-					<SystemTag>8DA9770D-CDE4-435e-9226-320FA9B712D5</SystemTag>
-					<FunctionId>105</FunctionId>
-					<InvokeId>37D6752D-3AAC-45e8-B625-531D5B86F204</InvokeId>
-					<Position>
-						<XPosition>130</XPosition>
-						<YPosition>130</YPosition>
-						<Width>1052</Width>
-						<Height>491</Height>
+						<XPosition>156</XPosition>
+						<YPosition>156</YPosition>
+						<Width>804</Width>
+						<Height>343</Height>
 					</Position>
 				</ControlWindow>
 			</WindowInformation>
@@ -130,7 +118,6 @@
 							<Interface>All</Interface>
 							<Port>All</Port>
 							<TransferRateDetection>Standard</TransferRateDetection>
-							<TransferRate>1000000</TransferRate>
 							<NumberOfDevicesInNetwork>1</NumberOfDevicesInNetwork>
 						</ScanningSetting>
 					</NetworkScanning>

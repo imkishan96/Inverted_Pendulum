@@ -1,7 +1,7 @@
 M = 0.195;    % Mass of cart (Kg)
-m = 0.18;    % Mass of pendulum(Kg)
+m = 0.2;    % Mass of pendulum(Kg) original 0.18
 b = 0.5;    % Co-efficient of Friction(N*sec/m)
-l = 0.21;    % length of pendulum(m)
+l = 0.22;    % length of pendulum(m) original 0.21
 g = 9.8;    % gravity (m/sec^2) 
 I = (m*l^2)/3;  % Moment of inertia(Kg*m^2)
 F = 0;      % Force Applied(N)
@@ -41,23 +41,30 @@ sys = ss(A,B,C,D,'statename',states,'inputname',inputs,'outputname',outputs);
 %% Linearized Continious closed-loop State-space System
 
 Q = C'*C;
-Q(1,1) = 5000;  % working 5000  
-Q(3,3) = 500;  % wokring 1000
-R = 0.1;        % working 0.1 
+Q(1,1) = 5000;  % working 5000  position
+Q(2,2) = 0;
+Q(3,3) = 2000;  % wokring 1000  angle
+Q(4,4) = 0;
+R = 0.4 ;        % working 0.1   force
+
+% 5000,2000,0.5 slow response smaller oscil water good Ts 100
+% 5000,2000,0.5 " " Medium osci Ts 200 water good
+
 K = lqr(A,B,Q,R);
 
 Ac = [(A-B*K)];
 Bc = [B];
 Cc = [C];
 Dc = [D];
-
+eig_Ac = eig(Ac)
 sys_cl = ss(Ac,Bc,Cc,Dc,'statename',states,'inputname',inputs,'outputname',outputs);
 Nc = 1/dcgain(sys_cl(1));
 sys_cl = ss(Ac,Bc*Nc,Cc,Dc,'statename',states,'inputname',inputs,'outputname',outputs);
 %figure; step(sys_cl)
 %% Linearized Continious closed-loop Observer based State-space System
 
-P = [-15 -16 -17 -14];
+%P = [-15 -16 -17 -14];
+P = [-35 -36 -37 -38];
 L = place(A',C',P)';
 
 Ace = [(A-B*K) (B*K);
